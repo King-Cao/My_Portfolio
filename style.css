@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  html {
+    font-family: 'Coming Soon', cursive;
+  }
+  /*mobile friendly text */
+  @media (max-width: 500px) {
+    html {
+      font-size: 80%;
+    }
+  }
+  /*top bar*/
+  #top_bar {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #C00;
+    width: 100vw;
+    height: 5em;
+    position: fixed;
+    top: 0;
+  }
+  /*Nav Bar Shit*/
+  #navbar {
+    display: flex;
+    top: 0;
+    position: fixed;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  #about_me_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #C00;
+    width: 10em;
+    height: 5em;
+    color: orange;
+    text-decoration: none;
+  }
+  #about_me_link:hover {
+    animation-name: button;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
+  #my_projects_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #C00;
+    width: 10em;
+    height: 5em;
+    color: orange;
+    text-decoration: none;
+  }
+  #my_projects_link:hover {
+    animation-name: button;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
+  #my_contact_info_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #C00;
+    width: 10em;
+    height: 5em;
+    color: orange;
+    text-decoration: none;
+  }
+  #my_contact_info_link:hover {
+    animation-name: button;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
+  @keyframes button {
+    100% {
+      background-color: red;
+    }
+  }
+  /* Nav bar mobile friendly */
+  @media (max-width: 1200px) {
+    #navbar {
+      margin: 0 0 0 0%;
+    }
+    #about_me_link, #my_projects_link, #my_contact_info_link {
+      width: 7.8em;
+    }
+  }
+  
+  
+  
+  
+    
+  
+  /*First Page - About Me Section */
+  #welcome-section {
+    text-align: center;
+    background-color: orange;
+    height: 100vh;
+  }
+  #welcome_headertext {
+    padding: 14% 0 0 0;
+    font-size: 3em;
+  }
+  .header_text_color {
+    color: #C00;
+  }
+  /* Mobile-friendly welcome section */
+  @media (max-width: 1200px) {
+    #welcome_headertext {
+      padding: 30% 0 0 0;
+    }
+  }
+  
+  /*The my projects Section */
+  
+  #projects {
+    background-color: #303841;
+    color: white;
+    height: 100vh;
+    text-align: center;
+    padding: 7em 0 0 0;
+  }
+  #my_projects_title {
+    font-size: 2.7em;
+  }
+  
+  .project-tile {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+  #box-container-center {
+    display: flex;
+    justify-content: center;
+  }
+  #box-container {
+    display: flex;
+    margin: ;
+    padding: 0 0 0 0;
+    height: 20em;
+    width: 70em;
+    background-color: silver;
+    flex-wrap: wrap;
+  }
+  #tribute_page {
+    flex-grow: 1;
+    box-shadow: -10px -20px 20px rgba(0,0,0,0.19), 0 6px 15px rgba(0,0,0,0.19);
+  }
+  #tribute_page:hover {
+    animation-name: project_button;
+    animation-duration: 900ms;
+    animation-fill-mode: forwards;
+  }
+  #survey_page {
+    flex-grow: 1;
+    box-shadow: -10px -20px 20px rgba(0,0,0,0.19), 0 6px 15px rgba(0,0,0,0.19);
+  }
+  #survey_page:hover {
+    animation-name: project_button;
+    animation-duration: 900ms;
+    animation-fill-mode: forwards;
+  }
+  #landing_page {
+    flex-grow: 1;
+    box-shadow: -10px -20px 20px rgba(0,0,0,0.19), 0 6px 15px rgba(0,0,0,0.19);
+  }
+  #landing_page:hover {
+    animation-name: project_button;
+    animation-duration: 900ms;
+    animation-fill-mode: forwards;
+  }
+  #lifting_guide {
+    flex-grow: 1;
+    box-shadow: -10px -20px 20px rgba(0,0,0,0.19), 0 6px 15px rgba(0,0,0,0.19);
+  }
+  #lifting_guide:hover {
+    animation-name: project_button;
+    animation-duration: 900ms;
+    animation-fill-mode: forwards;
+  }
+  @keyframes project_button {
+    0% {
+      width: 20%;
+      height: 102%;
+    }
+    50% {
+      width: 20%;
+      height: 102%;
+    }
+    100% {
+      background-color: white;
+      width: 20%;
+      height: 102%;
+      border-radius: 50%;
+    }
+  }
+  #profile-link {
+    color: white;
+  }
+  /*mobile friendly my projects section */
+  
+  @media (max-width: 1200px) {
+    #box-container {
+      margin: 0 3vw 0 3vw;
+      padding: 0 0 0 0;
+      height: 50vh;
+      width: 90vw;
+    }
+    #box-container {
+      height: 30em;
+    }
+    @keyframes project_button {
+    100% {
+      background-color: white;
+      border-radius: 50%;
+      }
+    }
+  }
+  
+  /*My contact info section */
+  #contact_info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: orange;
+    height: 100vh;
+  }
+  #contact_title {
+    padding: 14% 0 0 0;
+    font-size: 5em;
+  }
+  .contact_details {
+    font-size: 2em;
+  }
+  /*Mobile-friendly contact page */
+  @media (max-width: 1200px) {
+    #contact_title {
+      padding: 30% 0 0 0;
+    }
+  }
