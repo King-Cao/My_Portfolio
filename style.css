@@ -12,6 +12,8 @@
       font-size: 80%;
     }
   }
+  
+
   /*top bar*/
   #top_bar {
     display: flex;
@@ -21,6 +23,11 @@
     height: 5em;
     position: fixed;
     top: 0;
+  }
+  @media only screen and (max-width: 980px) and (min-width: 600px) {
+    #top_bar {
+      height: 10em;
+    }
   }
   /*Nav Bar Shit*/
   #navbar {
@@ -81,12 +88,13 @@
     }
   }
   /* Nav bar mobile friendly */
-  @media (max-width: 1200px) {
+  @media only screen and (max-width: 980px) and (min-width: 600px) {
     #navbar {
-      margin: 0 0 0 0%;
+      margin: 0 0 0 0;
     }
     #about_me_link, #my_projects_link, #my_contact_info_link {
-      width: 7.8em;
+      width: 8em;
+      font-size: 2em;
     }
   }
   
@@ -109,9 +117,9 @@
     color: #C00;
   }
   /* Mobile-friendly welcome section */
-  @media (max-width: 1200px) {
+  @media (max-width: 980px) {
     #welcome_headertext {
-      padding: 30% 0 0 0;
+      padding: 55% 0 0 0;
     }
   }
   
@@ -198,20 +206,24 @@
       border-radius: 50%;
     }
   }
-  #profile-link {
+  .profile-link {
     color: white;
+  }
+  /*mobile friendly profile link */
+  @media only screen and (max-width: 980px) and (min-width: 600px) {
+    .profile-link {
+      font-size: 2rem;
+    }
   }
   /*mobile friendly my projects section */
   
-  @media (max-width: 1200px) {
+  @media only screen and (max-width: 980px) and (min-width: 600px) {
+    #projects {
+      padding: 40% 0 0 0;
+    }
     #box-container {
       margin: 0 3vw 0 3vw;
       padding: 0 0 0 0;
-      height: 50vh;
-      width: 90vw;
-    }
-    #box-container {
-      height: 30em;
     }
     @keyframes project_button {
     100% {
@@ -220,7 +232,13 @@
       }
     }
   }
-  
+  @media (max-width: 700px) {
+    #box-container {
+      height: 30em;
+    }
+  }
+
+
   /*My contact info section */
   #contact_info {
     display: flex;
@@ -237,7 +255,7 @@
     font-size: 2em;
   }
   /*Mobile-friendly contact page */
-  @media (max-width: 1200px) {
+  @media only screen and (max-width: 980px) and (min-width: 600px) {
     #contact_title {
       padding: 30% 0 0 0;
     }
