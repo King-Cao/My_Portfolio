@@ -139,23 +139,28 @@ html {
   text-decoration: none;
   font-size: 1.5em;
 }
+
 #box-container-center {
   display: flex;
   justify-content: center;
 }
+
 #box-container {
-  display: flex;
-  margin: ;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  align-items: center;
   padding: 0 0 0 0;
   height: 20em;
   width: 70em;
-  background-color: silver;
+  background-color: #303841;
   flex-wrap: wrap;
 }
 #tribute_page {
   flex-grow: 1;
   box-shadow: -10px -20px 20px rgba(0, 0, 0, 0.19),
     0 6px 15px rgba(0, 0, 0, 0.19);
+  background-color: orange;
 }
 #tribute_page:hover {
   animation-name: project_button;
@@ -166,6 +171,7 @@ html {
   flex-grow: 1;
   box-shadow: -10px -20px 20px rgba(0, 0, 0, 0.19),
     0 6px 15px rgba(0, 0, 0, 0.19);
+  background-color: orange;
 }
 #survey_page:hover {
   animation-name: project_button;
@@ -176,6 +182,7 @@ html {
   flex-grow: 1;
   box-shadow: -10px -20px 20px rgba(0, 0, 0, 0.19),
     0 6px 15px rgba(0, 0, 0, 0.19);
+  background-color: orange;
 }
 #landing_page:hover {
   animation-name: project_button;
@@ -186,12 +193,36 @@ html {
   flex-grow: 1;
   box-shadow: -10px -20px 20px rgba(0, 0, 0, 0.19),
     0 6px 15px rgba(0, 0, 0, 0.19);
+  background-color: orange;
 }
 #lifting_guide:hover {
   animation-name: project_button;
   animation-duration: 900ms;
   animation-fill-mode: forwards;
 }
+#rock_paper_scissors {
+  flex-grow: 1;
+  box-shadow: -10px -20px 20px rgba(0, 0, 0, 0.19),
+    0 6px 15px rgba(0, 0, 0, 0.19);
+  background-color: orange;
+}
+#rock_paper_scissors:hover {
+  animation-name: project_button;
+  animation-duration: 900ms;
+  animation-fill-mode: forwards;
+}
+#etch-a-sketch {
+  flex-grow: 1;
+  box-shadow: -10px -20px 20px rgba(0, 0, 0, 0.19),
+    0 6px 15px rgba(0, 0, 0, 0.19);
+  background-color: orange;
+}
+#etch-a-sketch:hover {
+  animation-name: project_button;
+  animation-duration: 900ms;
+  animation-fill-mode: forwards;
+}
+/*
 @keyframes project_button {
   0% {
     width: 20%;
@@ -211,6 +242,7 @@ html {
 .profile-link {
   color: white;
 }
+*/
 /*mobile friendly profile link */
 @media only screen and (max-width: 980px) and (min-width: 600px) {
   .profile-link {
