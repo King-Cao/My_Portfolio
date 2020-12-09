@@ -88,19 +88,6 @@ html {
     background-color: red;
   }
 }
-/* Nav bar mobile friendly 
-@media only screen and (max-width: 980px) and (min-width: 600px) {
-  #navbar {
-    margin: 0 0 0 0;
-  }
-  #about_me_link,
-  #my_projects_link,
-  #my_contact_info_link {
-    width: 8em;
-    font-size: 2em;
-  }
-}
-*/
 /*First Page - About Me Section */
 #welcome-section {
   text-align: center;
@@ -132,12 +119,7 @@ html {
 }
 #my_projects_title {
   font-size: 2.7em;
-}
-
-.project-tile {
-  color: black;
-  text-decoration: none;
-  font-size: 1.5em;
+  padding: 10vh 0 0 0;
 }
 
 #box-container-center {
@@ -147,128 +129,47 @@ html {
 
 #box-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   align-items: center;
-  padding: 0 0 0 0;
+  padding: 5vh 0 0 0;
   height: 20em;
   width: 70em;
   background-color: #303841;
   flex-wrap: wrap;
 }
-#tribute_page {
-  flex-grow: 1;
+
+/*for my project cards*/
+.project-tile {
   box-shadow: -10px -20px 20px rgba(0, 0, 0, 0.19),
     0 6px 15px rgba(0, 0, 0, 0.19);
   background-color: orange;
+  color: black;
+  text-decoration: none;
+  font-size: 2em;
 }
-#tribute_page:hover {
+.project-tile:hover {
   animation-name: project_button;
   animation-duration: 900ms;
   animation-fill-mode: forwards;
 }
-#survey_page {
-  flex-grow: 1;
-  box-shadow: -10px -20px 20px rgba(0, 0, 0, 0.19),
-    0 6px 15px rgba(0, 0, 0, 0.19);
-  background-color: orange;
-}
-#survey_page:hover {
-  animation-name: project_button;
-  animation-duration: 900ms;
-  animation-fill-mode: forwards;
-}
-#landing_page {
-  flex-grow: 1;
-  box-shadow: -10px -20px 20px rgba(0, 0, 0, 0.19),
-    0 6px 15px rgba(0, 0, 0, 0.19);
-  background-color: orange;
-}
-#landing_page:hover {
-  animation-name: project_button;
-  animation-duration: 900ms;
-  animation-fill-mode: forwards;
-}
-#lifting_guide {
-  flex-grow: 1;
-  box-shadow: -10px -20px 20px rgba(0, 0, 0, 0.19),
-    0 6px 15px rgba(0, 0, 0, 0.19);
-  background-color: orange;
-}
-#lifting_guide:hover {
-  animation-name: project_button;
-  animation-duration: 900ms;
-  animation-fill-mode: forwards;
-}
-#rock_paper_scissors {
-  flex-grow: 1;
-  box-shadow: -10px -20px 20px rgba(0, 0, 0, 0.19),
-    0 6px 15px rgba(0, 0, 0, 0.19);
-  background-color: orange;
-}
-#rock_paper_scissors:hover {
-  animation-name: project_button;
-  animation-duration: 900ms;
-  animation-fill-mode: forwards;
-}
-#etch-a-sketch {
-  flex-grow: 1;
-  box-shadow: -10px -20px 20px rgba(0, 0, 0, 0.19),
-    0 6px 15px rgba(0, 0, 0, 0.19);
-  background-color: orange;
-}
-#etch-a-sketch:hover {
-  animation-name: project_button;
-  animation-duration: 900ms;
-  animation-fill-mode: forwards;
-}
-/*
+
 @keyframes project_button {
-  0% {
-    width: 20%;
-    height: 102%;
-  }
-  50% {
-    width: 20%;
-    height: 102%;
-  }
   100% {
     background-color: white;
-    width: 20%;
-    height: 102%;
     border-radius: 50%;
   }
 }
+
+/*looks like a specifically wanted that white link*/
 .profile-link {
   color: white;
 }
-*/
+
 /*mobile friendly profile link */
 @media only screen and (max-width: 980px) and (min-width: 600px) {
   .profile-link {
     font-size: 2rem;
-  }
-}
-/*mobile friendly my projects section */
-
-@media only screen and (max-width: 980px) and (min-width: 600px) {
-  #projects {
-    padding: 40% 0 0 0;
-  }
-  #box-container {
-    margin: 0 3vw 0 3vw;
-    padding: 0 0 0 0;
-  }
-  @keyframes project_button {
-    100% {
-      background-color: white;
-      border-radius: 50%;
-    }
-  }
-}
-@media (max-width: 700px) {
-  #box-container {
-    height: 30em;
   }
 }
 
