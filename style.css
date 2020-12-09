@@ -130,35 +130,31 @@ html {
 #box-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
   grid-template-rows: auto;
   align-items: center;
   padding: 5vh 0 0 0;
   height: 20em;
   width: 70em;
   background-color: #303841;
-  flex-wrap: wrap;
 }
 
 /*for my project cards*/
 .project-tile {
-  box-shadow: -10px -20px 20px rgba(0, 0, 0, 0.19),
-    0 6px 15px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 10px 10px black;
   background-color: orange;
   color: black;
   text-decoration: none;
   font-size: 2em;
+  border-radius: 15px;
 }
 .project-tile:hover {
-  animation-name: project_button;
-  animation-duration: 900ms;
-  animation-fill-mode: forwards;
+  background-color: rgb(192, 128, 9);
 }
-
-@keyframes project_button {
-  100% {
-    background-color: white;
-    border-radius: 50%;
-  }
+.project-tile:active {
+  background-color: #ceb039;
+  box-shadow: 0 6px 10px #303841;
+  transform: translateY(10px);
 }
 
 /*looks like a specifically wanted that white link*/
